@@ -8,7 +8,7 @@ struct Person {
 };
 
 double getAvgAge(int count) {
-    Person people[count];  // storing all the people
+    Person people[count]; 
     for (int i = 0; i < count; i++) {
         cout << "Enter first name for person " << i + 1 << ": ";
         cin >> people[i].firstName;
