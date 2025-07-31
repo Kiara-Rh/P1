@@ -1,42 +1,34 @@
-#include <iostream>
-using namespace std;
+# Prerequisites
+*. d
 
-struct Person {
-    string firstName;
-    string lastName;
-    int age;
-};
+# Compiled Object files
+*.lo
+*.lo
+*.o
+*.obj
 
-double getAvgAge(int count) {
-    Person people[count]; 
-    for (int i = 0; i < count; i++) {
-        cout << "Enter first name for person " << i + 1 << ": ";
-        cin >> people[i].firstName;
+# Precompiled Headers
+*.gch
+*.pch
 
-        cout << "Enter last name for person " << i + 1 << ": ";
-        cin >> people[i].lastName;
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-        cout << "Enter age for person " << i + 1 << ": ";
-        cin >> people[i].age;
+# Fortran module files
+*.mod
+*.smod
 
-        cout << endl;
-    }
 
-    int sum = 0;
-    for (int i = 0; i < count; i++) {
-        sum += people[i].age;
-    }
 
-    return (double)sum / count;
-}
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
-int main() {
-    int numPeople;
-    cout << "How many people you wanna add? ";
-    cin >> numPeople;
-
-    double average = getAvgAge(numPeople);
-    cout << "Average age is: " << average << endl;
-
-    return 0;
-}
+# Executables
+*.exe
+*.out
+*.app
